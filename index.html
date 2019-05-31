@@ -7,7 +7,7 @@
     <title>TAKAOSAN</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <script src="assets/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
@@ -41,8 +41,10 @@
 
             <!-- NEWS -->
             <section id="news_area">
+                <div class="section_title">
+                    <h2 class="section_title_text news_title">NEWS</h2>
+                </div>
                 <div class="news">
-                    <h2 class="section_title">NEWS</h2>
                     <ul class="news_ul">
                         <li class="news_li">
                             <span>2018.12.17</span>
@@ -67,7 +69,9 @@
 
             <!-- FEATURES -->
             <section id="features_area">
-                <h2 class="section_title">FEATURES</h2>
+                <div class="section_title">
+                    <h2 class="section_title_text features_title">FEATURES</h2>
+                </div>
                 <div class="features">
                     <img class="features_img" src="assets/img/features-image.jpg" alt="防水の赤いカッパ">
                     <div class="features_text">
@@ -82,84 +86,113 @@
 
             <!-- SUBSCRIPTION -->
             <section id="subscription_area">
-                <h2 class="section_title">SUBSCRIPTION</h2>
-                <p>TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
-                <a href="#">
-                    <div class="subscription">
-                        <img class="subscription_img" src="assets/img/subscription-starter-image.jpg" alt="べーってやってる赤い服の男の子">
-                        <h3 class="box_title">Starter</h3>
-                        <p class="price_text">
-                            <span>¥</span>2,400<span>/m</span>
-                        </p>
-                        <p>気軽に始められるスタータープラン</p>
-                        <p class="button_style">詳しくはこちら</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="subscription">
-                        <img class="subscription_img" src="assets/img/subscription-standard-image.jpg" alt="体育座りの女性">
-                        <h3 class="box_title">Standard</h3>
-                        <p class="price_text">
-                            <span>¥</span>7,800<span>/m</span>
-                        </p>
-                        <p>当店オススメのスタンダードパック</p>
-                        <p class="button_style">詳しくはこちら</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="subscription">
-                        <img class="subscription_img" src="assets/img/subscription-master-image.jpg" alt="ふたりの楽しげな女性">
-                        <h3 class="box_title">Master</h3>
-                        <p class="price_text">
-                            <span>¥</span>16,400<span>/m</span>
-                        </p>
-                        <p>ハイブランドを毎月お届けします</p>
-                        <p class="button_style">詳しくはこちら</p>
-                    </div>
-                </a>
+                <div class="section_title">
+                    <h2 class="section_title_text subscription_title">SUBSCRIPTION</h2>
+                </div>
+                <p class="subscription_text">TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
+                <ul class="subscription_area_container">
+                    <li class="subscription">
+                        <a href="#">
+                            <img class="subscription_img" src="assets/img/subscription-starter-image.jpg" alt="べーってやってる赤い服の男の子">
+                            <h3 class="box_title">Starter</h3>
+                            <p class="price_text">
+                                <span>¥</span>2,400<span>/m</span>
+                            </p>
+                            <p class="sub_text">気軽に始められるスタータープラン</p>
+                            <p class="button_style">詳しくはこちら</p>
+                        </a>
+                    </li>
+                    <li class="subscription">
+                        <a href="#">
+                            <img class="subscription_img" src="assets/img/subscription-standard-image.jpg" alt="体育座りの女性">
+                            <h3 class="box_title">Standard</h3>
+                            <p class="price_text">
+                                <span>¥</span>7,800<span>/m</span>
+                            </p>
+                            <p class="sub_text">当店オススメのスタンダードパック</p>
+                            <p class="button_style">詳しくはこちら</p>
+                        </a>
+                    </li>
+                    <li class="subscription">
+                        <a href="#">
+                            <img class="subscription_img" src="assets/img/subscription-master-image.jpg" alt="ふたりの楽しげな女性">
+                            <h3 class="box_title">Master</h3>
+                            <p class="price_text">
+                                <span>¥</span>16,400<span>/m</span>
+                            </p>
+                            <p class="sub_text">ハイブランドを毎月お届けします</p>
+                            <p class="button_style">詳しくはこちら</p>
+                        </a>
+                    </li>
+                </ul>
+                
             </section>
             <!-- -->
 
             <!-- ITEMS -->
             <section id="items_area">
-                <h2 class="section_title">ITEMS</h2>
+                <div class="section_title">
+                    <h2 class="section_title_text items_title">ITEMS</h2>
+                </div>
                 <ul class="items_ul">
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image01.png" alt="黄色い服の女性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image02.png" alt="貝殻を頭にいっぱいつけた女性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image03.png" alt="ひざに穴が空いてるズボンの男性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image04.png" alt="椎名林檎似の女性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image05.png" alt="アメリカンなショーパンメガネの女性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image06.png" alt="砂漠を歩く男性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image07.png" alt="石の上の黄色スニーカー">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image08.png" alt="後ろ向きで手をあげているバックパッカーの女性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image09.png" alt="海を臨む後ろ向きの男性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image10.png" alt="深い霧のなかにぽつりと女性">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image11.png" alt="テントの中から雪を見る男">
-                    </li>
-                    <li class="items_ul_li">
-                        <img src="assets/img/items-image12.png" alt="黄色いカバンで運動会を見る後ろ向きの女性">
-                    </li>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image01.png" alt="黄色い服の女性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image02.png" alt="貝殻を頭にいっぱいつけた女性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image03.png" alt="ひざに穴が空いてるズボンの男性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image04.png" alt="椎名林檎似の女性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image05.png" alt="アメリカンなショーパンメガネの女性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image06.png" alt="砂漠を歩く男性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image07.png" alt="石の上の黄色スニーカー">
+                        </li>
+                    </a>
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image08.png" alt="後ろ向きで手をあげているバックパッカーの女性">
+                        </li>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image09.png" alt="海を臨む後ろ向きの男性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image10.png" alt="深い霧のなかにぽつりと女性">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image11.png" alt="テントの中から雪を見る男">
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="items_ul_li">
+                            <img src="assets/img/items-image12.png" alt="黄色いカバンで運動会を見る後ろ向きの女性">
+                        </li>
+                    </a>
                 </ul>
             </section>
             <!-- -->
@@ -169,7 +202,7 @@
 
         <!-- フッター -->
         <footer>
-            <small>COPYRIGHT TAKAOSAN ALL RIGHT RESERVED.</small>
+            <small class="copyright">COPYRIGHT TAKAOSAN ALL RIGHT RESERVED.</small>
         </footer>
         <!-- -->
 
