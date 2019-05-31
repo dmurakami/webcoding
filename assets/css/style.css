@@ -139,7 +139,7 @@ main #news_area .news .news_ul .news_li span {
   background-color: #333;
   color: #fff;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 main #news_area .news .news_ul .news_li a {
@@ -234,6 +234,7 @@ main #subscription_area .subscription_area_container .subscription a .box_title 
 main #subscription_area .subscription_area_container .subscription a .price_text {
   margin-bottom: 36px;
   font-size: 40px;
+  font-weight: 500;
 }
 
 main #subscription_area .subscription_area_container .subscription a .price_text span {
