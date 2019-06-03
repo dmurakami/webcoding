@@ -115,7 +115,7 @@ header #global_nav .global_nav_ul:last-child {
     margin-bottom: 40px;
   }
   header #main_visual .catchcopy_img {
-    width: 121px;
+    width: 25%;
     position: absolute;
     top: 26px;
     right: 15px;
@@ -465,6 +465,10 @@ main #subscription_area .subscription_area_container .subscription:hover .button
   main #subscription_area .subscription_area_container .subscription a .sub_text {
     margin-bottom: 30px;
   }
+  main #subscription_area .subscription_area_container .subscription a .button_style {
+    width: auto;
+    margin: 0 20px 20px 20px;
+  }
 }
 
 main #items_area {
@@ -497,8 +501,12 @@ main #items_area .items_ul a .items_ul_li img {
     display: -ms-flexbox;
     display: flex;
   }
-  main #items_area .items_ul a .items_ul_li img {
-    width: 115px;
+  main #items_area .items_ul li {
+    width: 33.333%;
+  }
+  main #items_area .items_ul li .items_ul_li img {
+    vertical-align: top;
+    width: 100%;
   }
 }
 

@@ -108,7 +108,7 @@ header {
             .main_img {
             }
             .catchcopy_img {
-                width: 121px;
+                width: 25%;
                 position: absolute;
                 top: 26px;
                 right: 15px;
@@ -401,10 +401,14 @@ main {
                         .sub_text {
                             margin-bottom: 30px;
                         }
+                        .button_style {
+                            width: auto;
+                            margin: 0 20px 20px 20px;
+
+                        }
                     }
                 }
             }
-
         }
     }
 
@@ -429,14 +433,15 @@ main {
             width: 92%;
             .items_ul {
                 display: flex;
-                a {
+                li {
+                    width: 33.333%;
                     .items_ul_li {
                         img {
-                            width: 115px;
+                            vertical-align: top;
+                            width: 100%;
                         }
                     }
-                }
-                
+                }            
             }
         }
     }
