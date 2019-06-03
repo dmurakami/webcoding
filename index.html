@@ -16,9 +16,14 @@
 
         <!-- ヘッダー -->
         <header>
-            <h1 id="logo_img">
-                <a href="#"><img src="assets/img/logo.svg" alt="TAKAOSAN"></a>
-            </h1>
+            <div id="sp_header">
+                <h1 id="logo_img">
+                    <a href="#"><img src="assets/img/logo.svg" alt="TAKAOSAN"></a>
+                </h1>
+                <div id="sp_menu">
+                    <img src="assets/img/menu.svg" alt="スマホ版メニュー">
+                </div>
+            </div>
             <div id="main_visual">
                 <img class="main_img" src="assets/img/mainimage1.png" alt="山を見据える男">
                 <img class="catchcopy_img" src="assets/img/catchcopy.png" alt="WORK HARD,PLAY HARD">
@@ -170,9 +175,11 @@
                             <img src="assets/img/items-image07.png" alt="石の上の黄色スニーカー">
                         </li>
                     </a>
+                    <a href="">
                         <li class="items_ul_li">
                             <img src="assets/img/items-image08.png" alt="後ろ向きで手をあげているバックパッカーの女性">
                         </li>
+                    </a>
                     <a href="">
                         <li class="items_ul_li">
                             <img src="assets/img/items-image09.png" alt="海を臨む後ろ向きの男性">
@@ -208,6 +215,16 @@
 
     </div>
     <!-- wrapper終わり -->
+
+    <script>
+        $('#sp_menu').on('click', function () {
+            $('.global_nav_ul').slideToggle();
+            $('html').toggleClass('hidden');
+            $('body').toggleClass('hidden');
+            $('a').removeClass('active');
+            return false;
+        });
+    </script>
 
 </body>
 </html>

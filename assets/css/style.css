@@ -1,11 +1,28 @@
+html.hidden,
+body.hidden {
+  overflow: hidden;
+  height: 100%;
+}
+
 #wrapper {
   width: 1080px;
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  #wrapper {
+    overflow: hidden;
+    width: 100vw;
+  }
+}
+
 header #logo_img {
   width: 208px;
   margin: 36px 0;
+}
+
+header #sp_menu {
+  display: none;
 }
 
 header #main_visual {
@@ -69,6 +86,77 @@ header #global_nav .global_nav_ul:last-child {
   border-right: 2px solid #575757;
 }
 
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header #sp_header {
+    position: relative;
+    height: 70px;
+    background-color: #fff;
+    z-index: 50;
+  }
+  header #sp_header #logo_img {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    width: 187px;
+    margin: 0;
+  }
+  header #sp_header #sp_menu {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 16px;
+  }
+  header #main_visual {
+    position: relative;
+    width: 100vw;
+    margin-bottom: 40px;
+  }
+  header #main_visual .catchcopy_img {
+    width: 121px;
+    position: absolute;
+    top: 26px;
+    right: 15px;
+  }
+  header #global_nav {
+    margin-bottom: 56px;
+  }
+  header #global_nav .global_nav_ul {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  header #global_nav .global_nav_ul .global_nav_ul_li {
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+  header #global_nav .global_nav_ul .global_nav_ul_li .global_nav_ul_li a {
+    display: block;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    color: #454545;
+  }
+  header #global_nav .global_nav_ul .global_nav_ul_li:last-child {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  header #global_nav .global_nav_ul:last-child {
+    border-right: none;
+  }
+}
+
 main section {
   width: 100%;
   margin-bottom: 56px;
@@ -83,7 +171,7 @@ main section .section_title .section_title_text {
   padding-top: 7px;
   font-family: 'Montserrat';
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   background: url(../img/titlebar.png) no-repeat;
   background-position: 2px 0;
   background-size: 40px 4px;
@@ -94,8 +182,15 @@ main section .section_title .news_title {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  main section .section_title .news_title {
+    margin-top: 43px;
+    margin-bottom: 31px;
+  }
+}
+
 main section .section_title .features_title {
-  margin-bottom: 72px;
+  margin-bottom: 44px;
 }
 
 main section .section_title .subscription_title {
@@ -106,12 +201,24 @@ main section .section_title .items_title {
   margin-bottom: 72px;
 }
 
+@media (max-width: 768px) {
+  main section .section_title .items_title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  main section {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 main #news_area {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fafafa;
   border: 1px solid #eee;
-  margin-bottom: 136px;
 }
 
 main #news_area .news {
@@ -149,6 +256,33 @@ main #news_area .news .news_ul .news_li a {
   line-height: 1.75;
 }
 
+@media (max-width: 768px) {
+  main #news_area {
+    width: 92%;
+    padding: 0 16px;
+    margin-bottom: 44px;
+  }
+  main #news_area .news {
+    width: auto;
+  }
+  main #news_area .news .news_ul {
+    margin-bottom: 55px;
+  }
+  main #news_area .news .news_ul .news_li {
+    display: block;
+    margin-bottom: 21px;
+  }
+  main #news_area .news .news_ul .news_li span {
+    display: block;
+    margin-bottom: 13px;
+  }
+  main #news_area .news .news_ul .news_li a {
+    width: auto;
+    display: block;
+    margin: 0;
+  }
+}
+
 main #features_area {
   margin-bottom: 136px;
 }
@@ -169,13 +303,38 @@ main #features_area .features .features_img {
 
 main #features_area .features .features_text h3 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
 main #features_area .features .features_text p {
   line-height: 1.6;
   margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  main #features_area {
+    width: 92%;
+    margin-bottom: 110px;
+  }
+  main #features_area .features {
+    padding: 0 16px;
+    display: block;
+  }
+  main #features_area .features .features_img {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  main #features_area .features .features_text h3 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+  main #features_area .features .features_text p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 30px;
+  }
 }
 
 main #subscription_area {
@@ -228,7 +387,7 @@ main #subscription_area .subscription_area_container .subscription a .box_title 
   margin-bottom: 24px;
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 main #subscription_area .subscription_area_container .subscription a .price_text {
@@ -253,7 +412,7 @@ main #subscription_area .subscription_area_container .subscription a .button_sty
   transition: all 0.2s ease-out;
   width: 75%;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 auto 20px auto;
   padding: 20px;
   background-color: #eee;
@@ -276,6 +435,36 @@ main #subscription_area .subscription_area_container .subscription:hover .button
   background: linear-gradient(90deg, #020024 0%, #c9e23f 0%, #47e3dc 100%);
 }
 
+@media (max-width: 768px) {
+  main #subscription_area {
+    width: 92%;
+    margin-bottom: 100px;
+  }
+  main #subscription_area .subscription_text {
+    width: 100%;
+    padding: 0 16px;
+  }
+  main #subscription_area .subscription_area_container {
+    display: block;
+    width: 100%;
+  }
+  main #subscription_area .subscription_area_container .subscription {
+    margin-bottom: 24px;
+  }
+  main #subscription_area .subscription_area_container .subscription a .subscription_img {
+    margin-bottom: 20px;
+  }
+  main #subscription_area .subscription_area_container .subscription a .box_title {
+    margin-bottom: 20px;
+  }
+  main #subscription_area .subscription_area_container .subscription a .price_text {
+    margin-bottom: 30px;
+  }
+  main #subscription_area .subscription_area_container .subscription a .sub_text {
+    margin-bottom: 30px;
+  }
+}
+
 main #items_area {
   margin-bottom: 460px;
 }
@@ -296,8 +485,29 @@ main #items_area .items_ul a .items_ul_li img {
   width: 180px;
 }
 
+@media (max-width: 768px) {
+  main #items_area {
+    margin-bottom: 80px;
+    width: 92%;
+  }
+  main #items_area .items_ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main #items_area .items_ul a .items_ul_li img {
+    width: 115px;
+  }
+}
+
 footer {
   margin-bottom: 56px;
   font-size: 14px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-bottom: 155px;
+  }
 }
