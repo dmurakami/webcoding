@@ -449,9 +449,11 @@ main #subscription_area .subscription_area_container .subscription:hover .button
     width: 100%;
   }
   main #subscription_area .subscription_area_container .subscription {
+    width: 100%;
     margin-bottom: 24px;
   }
   main #subscription_area .subscription_area_container .subscription a .subscription_img {
+    width: 100%;
     margin-bottom: 20px;
   }
   main #subscription_area .subscription_area_container .subscription a .box_title {
